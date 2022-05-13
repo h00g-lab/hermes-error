@@ -23,6 +23,6 @@ app.post("/error", (req, res) => {
   res.send("enViado");
 });
 
-app.listen(5050 || process.env.PORT, () => {
+app.listen(process.env.PORT || 5050, () => {
   console.log("App is started");
 });
